@@ -30,9 +30,11 @@ A extendable segment tree go implement.
     
         tree := segmenttree.NewTree(nodes, updateFunc)
     }
-    
     ```
-2. finding leaf node and parents
+
+2. use segment to search data (pending to implement, PR is welcomed~)
+
+3. finding leaf node and parents
 
     ```go
     package main
@@ -52,7 +54,7 @@ A extendable segment tree go implement.
     }
     ```
    
-3. update tree data
+4. update tree data
     ```go
     package main
     
@@ -67,7 +69,4 @@ A extendable segment tree go implement.
         leaf.Value = newData
         tree.Update(leaf)
     }
-    
-
-
     ```
